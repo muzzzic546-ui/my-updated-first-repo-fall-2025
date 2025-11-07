@@ -1,7 +1,11 @@
-# my-updated-first-repo-fall-2025
+# My First Repo!
 
-Learning and practicing version control!
+This is the README.md file. It uses the markdown language.
 
-More content.
+Here is a list:
 
-Adding this content using the VS Code text editor (locally).
+  + Item 1
+  + Item 2
+  + Item 3
+
+For more information about Markdown syntax, see the [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
