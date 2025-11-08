@@ -10,7 +10,7 @@ Clone the repo to download it from GitHub. Perhaps onto the Desktop.
 Navigate to the repo using the command line.
 
 ```sh
-cd ~/Desktop/my-first-repo-fall-2025
+cd ~/Desktop/my-updated-first-repo-fall-2025
 ```
 
 Create a virtual environment:
@@ -49,6 +49,11 @@ python app/rps.py
 python -m app.rps
 ```
 
+Stocks dashboard: 
+
+```sh
+python -m app.stocks
+```
 
 
 ## Testing
