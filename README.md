@@ -13,6 +13,25 @@ Navigate to the repo using the command line.
 cd ~/Desktop/my-first-repo-fall-2025
 ```
 
+Create a virtual environment:
+
+```sh
+conda create -n my-first-env-fall-2025 python=3.13
+```
+
+Activate the virtual environment:
+
+```sh
+conda activate my-first-env-fall-2025
+```
+
+Install package dependencies:
+
+```sh
+pip install -r requirements.txt
+```
+
+
 ## Usage
 
 Example script:
@@ -28,4 +47,14 @@ python app/rps.py
 
 # alternative "modular style" command:
 python -m app.rps
+```
+
+
+
+## Testing
+
+Run tests:
+
+```sh
+pytest
 ```
