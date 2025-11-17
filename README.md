@@ -33,7 +33,7 @@ Install package dependencies:
 pip install -r requirements.txt
 ```
 
-### Secret Credentials
+### Secret Credentials / Configuration
 
 For the stocks dashboard, you will need to acquire a "premium" [AlphaVantage](https://www.alphavantage.co/) API key (from the prof) and supply it as an environment variable. Create a local ".env" file and place inside contents like the following:
 
@@ -42,6 +42,9 @@ For the stocks dashboard, you will need to acquire a "premium" [AlphaVantage](ht
 
 # replace "demo" with your premium key:
 ALPHAVANTAGE_API_KEY="demo"
+
+# also tell Flask where our web app is defined
+FLASK_APP=web_app flask run
 ```
 
 Also, for the stocks tests to work on GitHub Actions, you will need to set a repository secret named `ALPHAVANTAGE_API_KEY` via the repository's settings on GitHub.
@@ -68,6 +71,26 @@ Stocks dashboard:
 
 ```sh
 python -m app.stocks
+```
+
+
+### Web App
+
+Run the web app (then view in the browser at http://localhost:5000/):
+
+```sh
+# if we have the FLASK_APP=web_app flask run env var in the ".env" file:
+flask run
+
+# if that doesn't work: 
+# Mac OS:
+FLASK_APP=web_app flask run
+
+# Windows OS:
+# ... if `export` doesn't work for you, try `set` instead
+# ... or set FLASK_APP variable via ".env" file
+export FLASK_APP=web_app
+flask run
 ```
 
 
