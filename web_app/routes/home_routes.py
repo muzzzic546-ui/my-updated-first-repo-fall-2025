@@ -19,7 +19,7 @@ def about():
 
 @home_routes.route("/hello")
 def hello_world():
-    print("HELLO...")
+    print("HELLO...") 
 
     # if the request contains url params, for example a request to "/hello?name=Harper"
     # the request object's args property will hold the values in a dictionary-like structure
